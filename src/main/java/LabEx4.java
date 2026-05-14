@@ -1,7 +1,6 @@
-// Rohan Nicollo M. Teope
-// Sean 
-// ICS2605
-// 1CSD
+// Rohan Nicollo M. Teope, Sean Gabriel DR. Bolalin
+// Course: ICS 2605
+// Section: 1CSD
 // Lab Exercise 4
 
 import java.util.Scanner;
@@ -14,7 +13,7 @@ public class LabEx4 {
         
         System.out.println("""
                            Teope, Rohan Nicollo M.
-                           Sean
+                           Bolalin, Sean Gabriel DR.
                            """);
         
         System.out.print("Enter t: ");
@@ -82,6 +81,43 @@ public class LabEx4 {
                 System.out.println(t0);
                 System.out.println(t1);
                 System.out.println(t2);
+            }
+            
+            case 2 -> {
+                
+                BST<Character> bst1 = new BST<>();
+                char[] insertOrder = new char[] {
+                    'F', 'T', 'D', 'Q', 'A', 'L', 'E', 'P', 'S', 'M', 'H', 'C'
+                };
+                
+                for (char key : insertOrder) {
+                    bst1.insert(key);
+                }
+                
+                System.out.println(bst1);
+                
+                char[] searchOrder = new char[] {
+                    'R', 'A', 'F', 'L', 'N', 'D', 'V'
+                };
+                
+                for (char key : searchOrder) {
+                    
+                    BTNode<Character> found = bst1.search(key);
+                    
+                    if (found != null) {
+                        
+                        System.out.println(found);
+                        System.out.println("level=" + found.level);
+                        
+                    }
+                    else {
+                        
+                        System.out.println(key + " was not found.");
+                        
+                    }
+                    
+                }
+                
             }
         }
     }
