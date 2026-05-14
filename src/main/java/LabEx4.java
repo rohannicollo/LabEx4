@@ -1,4 +1,5 @@
-// Rohan Nicollo M. Teope, Sean Gabriel DR. Bolalin
+// Rohan Nicollo M. Teope 
+// Sean Gabriel DR. Bolalin
 // Course: ICS 2605
 // Section: 1CSD
 // Lab Exercise 4
