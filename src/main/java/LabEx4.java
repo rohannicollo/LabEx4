@@ -75,13 +75,21 @@ public class LabEx4 {
                 
                 t2.setRoot(btnS);
                 
+                System.out.println("a. The empty tree t0");
                 t0.computeLevels();
-                t1.computeLevels();
-                t2.computeLevels();
-                
                 System.out.println(t0);
+                System.out.println();
+                
+                System.out.println("b. The tree t1 above");
+                t1.computeLevels();
                 System.out.println(t1);
+                System.out.println();
+                
+                System.out.println("c. The tree t2 below");
+                t2.computeLevels();
                 System.out.println(t2);
+                System.out.println();
+
             }
             
             case 2 -> {

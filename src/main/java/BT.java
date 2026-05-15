@@ -26,9 +26,9 @@ public class BT<T> {
         
         if (root != null) {
             
-            Queue<BTNode<T>> que = new LinkedList<>();
+            SLL<BTNode<T>> que = new SLL<>();
             int level = 0;
-            que.add(root);
+            que.addToTail(root);
             
             while (!que.isEmpty()) {
                 
@@ -36,16 +36,16 @@ public class BT<T> {
                 
                 for (int i = 0; i < size; i++) {
                     
-                    BTNode<T> n = que.remove();
+                    BTNode<T> n = que.deleteFromHead();
                     n.level = level;
                     System.out.println("K=" + n.info + " level=" + n.level);
                     
                     if (n.left != null) {
-                        que.add(n.left);
+                        que.addToTail(n.left);
                     }
                     
                     if (n.right != null) {
-                        que.add(n.right);
+                        que.addToTail(n.right);
                     }
                     
                 }
