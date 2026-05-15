@@ -116,7 +116,7 @@ public class LabEx4 {
                     if (found != null) {
                         
                         System.out.println(found);
-                        System.out.println("level=" + found.level);
+                        // System.out.println("level=" + found.level);
                         
                     }
                     else {
