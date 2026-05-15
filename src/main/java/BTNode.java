@@ -1,5 +1,4 @@
-// Rohan Nicollo M. Teope
-// Sean Gabriel DR. Bolalin
+// Rohan Nicollo M. Teope, Sean Gabriel DR. Bolalin
 // Course: ICS 2605
 // Section: 1CSD
 // Lab Exercise 4
@@ -12,15 +11,13 @@ public class BTNode<T> {
     public BTNode<T> right;
     
     public BTNode() {
-        info = null;
-        level = -1;
+        this.info = null;
         left = null;
         right = null; 
     }
     
     public BTNode(T info) {
         this.info = info;
-        level = -1;
         left = null;
         right = null;
     }
